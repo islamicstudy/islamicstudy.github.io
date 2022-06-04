@@ -36,7 +36,11 @@ const Quran = () => {
                 <p>{surah.englishNameTranslation}</p>
                 <p>{surah.revelationType}</p>
                 <p>{surah.numberOfAyahs}</p>
-                <p>{surah.ayahs.map((ayah) => ayah.text)}</p>
+                <p className="surah-ayahs">
+                  {surah.ayahs.map((ayah) => (
+                    <p>{ayah.text}</p>
+                  ))}
+                </p>
               </li>
             ))}
           </ul>
